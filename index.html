@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+<head>
+
+    <link rel="stylesheet" href="style.css">
+    <title>Stack And Queue Display</title>
+
+</head>
+
+<body>
+<div class="container">
+
+    <div class="heading">
+        <h1>Stack And Queue Display</h1>
+        <p>This Stack and Queue helps to check stack and Queue
+            Stack can modify as reuired.
+        </p>
+    </div>
+   
+
+    <div class="dropdown">
+        <button class="dropbtn">Menu Selection </button>
+        <div class="dropdown-content">
+          <a id="stackChoice" href="#" onclick="stackMenu()" >Stack</a>
+          <a id="queueChoice" href="#"onclick="queueMenu()" >Queue</a>
+        </div>
+      </div>
+    
+
+      <div class="Selectionbtn">
+       
+            <input type="button" id="Stack1" value="STACK: 1" onclick="stackOne()" ></input>
+       
+            <input type="button" id="Stack2" value="STACK: 2" onclick="stackTwo()"></input>
+  
+            <input type="button" id="Queue1" value="QUEUE: 1" onclick="queueOne()"></input>
+       
+            <input type="button" id="Queue2" value="QUEUE: 2" onclick="queueTwo()"></input>
+        </div>
+        
+  
+        <div class="displayDiv">
+            <label class="lable" id="sl1" for="stack1Queue">STACK:1</label>
+            <label class="lable" id="sl2" for="stack2Queue">STACK:2</label>
+
+            <label class="lable" id="ql1" for="stack1Queue">QUEUE:1</label>
+            <label class="lable" id="ql2" for="stack2Queue">QUEUE:2</label>
+            <br>
+            <select class="stack1Output" name="stackLine" id="stack1Queue" multiple ></select>
+            <select  class="stack2Output" name="stackLine" id="stack2Queue" multiple ></select>
+            
+          </div>
+
+            <div class="stackItems">
+
+                <p id="userInst">Select Menu Item from Menu Selection</p>
+                <label class="lable" id="info" for="stackInput"> User Stack Input</label>
+            
+            <input   type="button" value="PUSH" id="push" onclick="push()"></input>
+            <input  type="button" value="QUEUE" id="queue" onclick="queue()"></input>
+
+            <input  placeholder="User Stack Input" type="text" id="stackInput"></input>
+
+            <input type="button" value="POP" id="pop" onclick="pop()"></input>
+            <input  type="button" value="DEQUEUE" id="dequeue" onclick="dequeue()"></input>
+
+            <br><br>
+            <span  class ="msg" id="MsgOne">Stacks/Queues are overflow please pop the elements from stacks</span>
+            <span  class ="msg" id="MsgTwo">Stacks/Queues are underflow please push the elements to stacks</span>
+            <span  class ="msg" id="MsgThree">Stack:1 Queue is Overflow - Element pass to Stack:2 </span>
+            <span  class ="msg" id="MsgFour">Stack:2 Queue is Empty - Element will POP From Stack:1 </span>
+            <span  class ="msg" id="MsgFive">Queue:1 Queue is Overflow - Element pass to Queue:2 </span>
+            <span  class ="msg" id="MsgSix">Queue:2 Queue is Empty - Element will POP From Queue:1 </span>
+            
+            
+
+        </div>
+    </div>
+<script src="./stack_queue.js" charset="utf-8"></script>
+
+</body>
+</html>

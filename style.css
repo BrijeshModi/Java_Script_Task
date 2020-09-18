@@ -1,0 +1,193 @@
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    font-family: sans-serif;
+    background: rgb(228,228,228);
+}
+.container
+{
+    background-image: url("img/sky.gif");
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.heading
+{
+    text-align: center;
+    margin: 0px, 0px,15px,0px;
+    background: #00848c;
+    color: white;
+}
+.heading h1
+{
+font-size: 35px;
+}
+.heading p
+{
+    margin-top: 8px;
+    font-size: 14px;
+   
+}
+.dropbtn {
+    background-color:#4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    margin-top: 1.4em;
+    
+  }
+  
+  .dropdown 
+  {
+    width: 100%;
+    height: 10%;
+    position: relative;
+    display: block;
+    background: #00848c;
+    color: white;
+
+  }
+  .dropdown-content
+  {
+    display: none;
+    position:relative;
+    background-color: #f1f1f1;
+    max-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a
+  {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .Selectionbtn
+  {
+    float: left;
+    margin-top: 10em;
+    margin-left: 25em;
+  }
+  .displayDiv
+  {
+    margin-left: 5em;
+    margin-top: 5em;
+    float:left;
+  }
+ .stack1Output, .stack2Output
+  {
+  
+    height: 300px;
+    width: 100px;
+    margin-left: 5em;
+    font-family: sans-serif;
+    background: rgb(228,228,228);
+    border-color: rgb(153, 51, 51);
+    border-radius: 1em;
+    float: left;
+    display: block;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    
+  }
+    #Stack1, #Stack2, #Queue1, 
+    #Queue2
+    {
+      height: 30px;
+      width: 100px;
+      margin-top: 4em;
+      margin-left: 1em;
+      font-family: sans-serif;
+      display: none;
+      font-size: large;
+      font-weight: bold;
+    }
+
+     #push, #pop, #queue, #dequeue
+     {
+      height: 30px;
+      width: 100px;
+      margin-top: 1em;
+      margin-left: 1em;
+      font-family: sans-serif;
+      font-size: large;
+      font-weight: bold;
+      float: left;
+      display: none;
+     }
+
+     #sl1, #sl2, #ql1, #ql2
+     {
+       float: left;
+       display: none; 
+     }
+ 
+  .lable
+  {
+    margin-left: 7em;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: rgb(24, 9, 226);
+   
+  }
+  #info
+  {
+    margin-left: 10em;
+    margin-top: 30px; 
+    display: none;
+  }
+  .stackItems p
+  {
+    margin-top: 2em;
+    margin-left: -2em;
+    font-weight: bold;
+    font-size: x-large;
+    font-family: sans-serif;
+    color: rgb(24, 9, 226);
+    display: block;
+
+  }
+  #stackInput
+  {
+    color: blue; 
+    height: 30px; 
+    width: 200px; 
+    float: left; 
+    margin-left: 1em; 
+    margin-top: 1em;
+    display: none;
+    font-size: large;
+      font-weight: bold;
+
+  }
+  .stackItems
+  {
+   height: 200px; 
+   width: 700px; 
+   float: left;
+   margin-left: 35em;
+  }
+  .msg
+  {
+    display: none; 
+    color: rgb(38, 0, 255); 
+    font-weight: bold;
+    font-size: large;
+    margin-top: 20px;
+  }
+  
+  .dropdown-content a:hover {background-color:#ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color:#3e8e41;}
